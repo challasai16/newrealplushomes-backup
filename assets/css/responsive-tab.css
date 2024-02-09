@@ -1,0 +1,106 @@
+/*Tabs*/
+.tab__container {margin: auto;border-radius: 5px;}
+
+.tab__title {
+  margin: 25px 0 0;}
+  
+    .tab__button:first-of-type {
+      margin:0;
+  }
+  
+  .tab__button {
+    /*padding: 11px 132px;
+    color: #fff;
+    border: 1px solid #fff;
+    background: #ac8748;*/
+    padding: 11px 69px;
+    color: #221c13;
+    border: none;
+    background: none;
+    outline: none;
+    margin: 0 -5px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+  }
+  
+  .tab_button-active {
+    /*border-bottom: none;
+    background: #221c13;
+    color: #fff;*/
+    border-bottom: 3px solid #ac8748;
+    color: #ac8748;
+    
+  }
+
+
+.tab__inside {
+  display: grid;
+  /*grid-template-columns: repeat(2, 1fr);*/
+  grid-template-columns: repeat(1, 1fr);
+  visibility: hidden; 
+  opacity: 0;
+  height: 0;
+  transform: translateY(10px);
+  transition: transform .3s ease-in;
+  padding: 5px 0 0 0;
+}
+
+.tab__inside-active {
+  visibility: visible; 
+  opacity: 1;
+  height: 100%;
+	transform: translateY(0);
+	transition: transform .3s ease-out 0.1s, opacity .3s ease-out 0.1s;
+}
+
+
+/*-------::MEDIA QUERIES::-------*/
+
+@media only screen and (max-width: 600px){
+.tab__button.tab_button_padding{padding: 3px 15px;font-size: 0.7rem;}
+
+}
+
+@media only screen and (max-width: 390px) and (min-width: 380px){
+.tab__button.tab_button_padding{padding: 3px 16px !important;font-size: 0.7rem;}
+}
+
+@media only screen and (max-width: 420px) and (min-width: 391px){
+  .tab__button.tab_button_padding{padding: 3px 19px !important;font-size: 0.7rem;}
+  }
+
+@media only screen and (max-width: 300px){
+    .tab__button.tab_button_padding{padding: 3px 7px !important;font-size: 0.6rem!important;}
+}
+
+@media only screen and (max-width: 360px){
+    .tab__button.tab_button_padding{padding: 3px 17px !important;font-size: 0.6rem!important;}
+}
+
+@media only screen and (max-width: 389px) and (min-width: 361px){
+  .tab__button.tab_button_padding{padding: 3px 13px !important;font-size: 0.7rem!important;}
+  }
+
+@media only screen and (min-width: 390px) and (max-width: 381px){
+    .tab__button.tab_button_padding{padding: 3px 22px;font-size: 0.6rem!important;}
+}
+
+@media only screen and (max-width: 768px){
+    .tab__button.tab_button_padding{padding: 5px 71px;font-size: 0.7rem;}
+}
+
+@media only screen and (max-width: 991px){
+    .tab__button.tab_button_padding{padding: 5px 71px;font-size: 0.7rem;}
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 992px){
+  .tab__button.tab_button_padding{padding: 5px 110px;font-size: 0.7rem;}
+}
+
+@media only screen and (max-width: 320px){
+  .tab__button.tab_button_padding{padding: 3px 10px !important;}
+}
+@media only screen and (max-width: 300px){
+  .tab__button.tab_button_padding{padding: 3px 7px !important;}
+}
